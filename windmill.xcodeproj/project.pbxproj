@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01572D1E2B308645001F964A /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D1D2B308645001F964A /* AccountCell.swift */; };
+		01572D202B3094CB001F964A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D1F2B3094CB001F964A /* Color.swift */; };
+		01572D222B3C5264001F964A /* WeeksSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D212B3C5264001F964A /* WeeksSelectorView.swift */; };
+		01572D242B42FD77001F964A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D232B42FD77001F964A /* DashboardView.swift */; };
+		01572D262B4301BF001F964A /* DashboardProgressBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D252B4301BF001F964A /* DashboardProgressBarStyle.swift */; };
+		01572D282B442FBF001F964A /* WindmillProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D272B442FBE001F964A /* WindmillProgressView.swift */; };
 		01A63E5C2B18DEC80028FEDD /* windmillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E5B2B18DEC80028FEDD /* windmillApp.swift */; };
 		01A63E5E2B18DEC80028FEDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E5D2B18DEC80028FEDD /* ContentView.swift */; };
 		01A63E602B18DECA0028FEDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A63E5F2B18DECA0028FEDD /* Assets.xcassets */; };
@@ -14,6 +20,8 @@
 		01A63E6D2B18DECA0028FEDD /* windmillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E6C2B18DECA0028FEDD /* windmillTests.swift */; };
 		01A63E772B18DECA0028FEDD /* windmillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E762B18DECA0028FEDD /* windmillUITests.swift */; };
 		01A63E792B18DECA0028FEDD /* windmillUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */; };
+		01A63E862B18DEE60028FEDD /* EditPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E852B18DEE60028FEDD /* EditPresetView.swift */; };
+		01A63E8A2B18E5F70028FEDD /* AddPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E892B18E5F70028FEDD /* AddPresetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01572D1D2B308645001F964A /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		01572D1F2B3094CB001F964A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		01572D212B3C5264001F964A /* WeeksSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksSelectorView.swift; sourceTree = "<group>"; };
+		01572D232B42FD77001F964A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		01572D252B4301BF001F964A /* DashboardProgressBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardProgressBarStyle.swift; sourceTree = "<group>"; };
+		01572D272B442FBE001F964A /* WindmillProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindmillProgressView.swift; sourceTree = "<group>"; };
 		01A63E582B18DEC80028FEDD /* windmill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = windmill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A63E5B2B18DEC80028FEDD /* windmillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillApp.swift; sourceTree = "<group>"; };
 		01A63E5D2B18DEC80028FEDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +58,8 @@
 		01A63E722B18DECA0028FEDD /* windmillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = windmillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A63E762B18DECA0028FEDD /* windmillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillUITests.swift; sourceTree = "<group>"; };
 		01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01A63E852B18DEE60028FEDD /* EditPresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPresetView.swift; sourceTree = "<group>"; };
+		01A63E892B18E5F70028FEDD /* AddPresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,14 @@
 				01A63E5D2B18DEC80028FEDD /* ContentView.swift */,
 				01A63E5F2B18DECA0028FEDD /* Assets.xcassets */,
 				01A63E612B18DECA0028FEDD /* Preview Content */,
+				01A63E852B18DEE60028FEDD /* EditPresetView.swift */,
+				01A63E892B18E5F70028FEDD /* AddPresetView.swift */,
+				01572D1D2B308645001F964A /* AccountCell.swift */,
+				01572D1F2B3094CB001F964A /* Color.swift */,
+				01572D212B3C5264001F964A /* WeeksSelectorView.swift */,
+				01572D232B42FD77001F964A /* DashboardView.swift */,
+				01572D252B4301BF001F964A /* DashboardProgressBarStyle.swift */,
+				01572D272B442FBE001F964A /* WindmillProgressView.swift */,
 			);
 			path = windmill;
 			sourceTree = "<group>";
@@ -258,7 +282,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				01A63E5E2B18DEC80028FEDD /* ContentView.swift in Sources */,
+				01572D242B42FD77001F964A /* DashboardView.swift in Sources */,
+				01572D1E2B308645001F964A /* AccountCell.swift in Sources */,
+				01572D222B3C5264001F964A /* WeeksSelectorView.swift in Sources */,
+				01A63E8A2B18E5F70028FEDD /* AddPresetView.swift in Sources */,
+				01572D282B442FBF001F964A /* WindmillProgressView.swift in Sources */,
+				01A63E862B18DEE60028FEDD /* EditPresetView.swift in Sources */,
 				01A63E5C2B18DEC80028FEDD /* windmillApp.swift in Sources */,
+				01572D202B3094CB001F964A /* Color.swift in Sources */,
+				01572D262B4301BF001F964A /* DashboardProgressBarStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -430,6 +462,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +492,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
