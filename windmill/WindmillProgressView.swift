@@ -9,9 +9,21 @@ import SwiftUI
 
 struct WindmillProgressView: View {
     
-    var value: Int = 9
+    var _value: Int
+    var value: Int {
+        return _value.coerceAtMost(max: total)
+    }
+    // TODO: _value, value 에 관한 getter, setter 적용 방법도 알고싶다.
+    
     var total: Int = 26
     var height: Double = 10.0
+    
+    init(value: Int, total: Int, height: Double) {
+        self._value = value
+        self.total = total
+        self.height = height
+    }
+    
     
     private var progress: CGFloat {
         get {
@@ -23,20 +35,23 @@ struct WindmillProgressView: View {
         GeometryReader { geo in
             VStack {
                 VStack {
-                    Text("\(value)주차!")
-                        .font(.system(size: 10))
+                    Text("\(value)주차").font(.system(size: 10))
                         .frame(width: 50)
                     Image(systemName: "arrow.down.heart.fill")
+                        
                         .foregroundColor(.red)
                 }.frame(maxWidth :geo.size.width, alignment: .leading)
-                    .padding(EdgeInsets(top: 0, leading: (geo.size.width * progress - 50) , bottom: 0, trailing: 0))
-                    .background(Color.gray)
+                    .offset(x: (geo.size.width * progress) - 25)
+                
                 
                 ZStack {
-                    RoundedRectangle(cornerRadius: 10.0)
-                        .fill(.rightGrayD9)
-                        .frame(width: geo.size.width - 50, height: height)
+                    VStack {
+                        RoundedRectangle(cornerRadius: 10.0)
+                            .fill(.rightGrayD9)
+                            .frame(maxWidth: geo.size.width, maxHeight: height)
+                    }.frame(maxWidth: .infinity, alignment: .leading)
                     
+                        
                     VStack {
                         RoundedRectangle(cornerRadius: 10.0)
                             .fill(.purpleDefault)
@@ -45,14 +60,13 @@ struct WindmillProgressView: View {
                                 height: height,
                                 alignment: .leading
                             )
-                            .animation(.easeInOut(duration: 10).repeatForever(autoreverses: true), value: geo.size.width * progress)
-                    }.frame(maxWidth: geo.size.width, alignment: .leading)
-                        .padding(EdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 0))
+                            .transition(.slide)
+                    }.frame(maxWidth: .infinity, alignment: .leading)
                     
                 }
                 
                 HStack {
-                    Text("숙제ㅔ").font(.system(size: 10))
+                    Text("1주차").font(.system(size: 10))
                     Spacer()
                     Text("\(total)주차").font(.system(size: 10))
                 }
@@ -63,5 +77,16 @@ struct WindmillProgressView: View {
 }
 
 #Preview {
-    WindmillProgressView(value: 26, total: 26, height: 10)
+    WindmillProgressView(value: 2512, total: 26, height: 10)
+}
+
+
+extension Int {
+    func coerceAtMost(max: Int) -> Int {
+        if self > max {
+            return max
+        } else {
+            return self
+        }
+    }
 }
