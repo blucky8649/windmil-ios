@@ -9,16 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            VStack {
-                
-            }.navigationTitle("Windmill")
-                .toolbar {
-                    ToolbarItemGroup(placement: .topBarTrailing) {
-                        Button("Settings") {}
-                    }
-                    
-                }
+        VStack {
+            Text("--DashboardView--")
+            DashboardView()
+            Spacer()
+            Text("--AccountCell--")
+            AccountCell()
+            Spacer()
+            Text("--WeeksSelectorView--")
+            WeeksSelectorView()
         }
     }
 }
