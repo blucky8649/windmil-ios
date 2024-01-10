@@ -10,9 +10,9 @@ import SwiftUI
 struct AddPresetView: View {
     var body: some View {
         VStack() {
-            EditPresetView(contents: "", title: "제목", placeHolder: "placeholder")
-            EditPresetView(contents: "", title: "제목", placeHolder: "placeholder")
-            EditPresetView(contents: "", title: "제목", placeHolder: "placeholder")
+//            EditPresetView(contents: "", title: "제목", placeHolder: "placeholder")
+//            EditPresetView(contents: "", title: "제목", placeHolder: "placeholder")
+//            EditPresetView(contents: "", title: "제목", placeHolder: "placeholder")
         }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         
         
