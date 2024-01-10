@@ -7,44 +7,51 @@
 
 import SwiftUI
 
-struct WindmillProgressView: View {
+
+struct WeekValue {
+    // FIXME: 적당한 네이밍으로 수정해주셔도 좋을것같아요!
+    var total: Int = 26
     
-    init(value: Int, total: Int, height: Double) {
-        self._value = value
-        self.total = total
-        self.height = height
+    var _week: Int
+    var week: Int {
+        get {
+            return _week
+        }
+        set(newValue) {
+            if (newValue > total) {
+                _week = total
+            } else {
+                _week = newValue
+            }
+        }
     }
+}
+
+
+struct WindmillProgressView: View {
+    var weekValue: WeekValue = WeekValue(total: 0, _week: 0)
+    var height: Double = 10.0
     
     @State private var animatedValue: CGFloat = 0.0
     
     private var progress: CGFloat {
         get {
-            return CGFloat(value) / CGFloat(total)
+            return CGFloat(weekValue.week) / CGFloat(weekValue.total)
         }
     }
-    
-    var _value: Int
-    var value: Int {
-        return _value.coerceAtMost(max: total)
-    }
-    // TODO: _value, value 에 관한 getter, setter 적용 방법도 알고싶다.
-    
-    var total: Int = 26
-    var height: Double = 10.0
     
     var body: some View {
         GeometryReader { geo in
             VStack {
                 VStack {
-                    Text("\(value)주차").font(.system(size: 10))
+                    Text("\(weekValue.week)주차").font(.system(size: 10))
                         .frame(width: 50)
                     Image(systemName: "arrow.down.heart.fill")
-                        
+                    
                         .foregroundColor(.red)
                 }.frame(maxWidth :geo.size.width, alignment: .leading)
                     .offset(x: (geo.size.width * animatedValue) - 25)
                     .animation(.easeInOut(duration: 2.5))
-                
                 
                 ZStack {
                     VStack {
@@ -53,7 +60,6 @@ struct WindmillProgressView: View {
                             .frame(maxWidth: geo.size.width, maxHeight: height)
                     }.frame(maxWidth: .infinity, alignment: .leading)
                     
-                        
                     VStack {
                         RoundedRectangle(cornerRadius: 10.0)
                             .fill(.purpleDefault)
@@ -67,14 +73,14 @@ struct WindmillProgressView: View {
                     
                 }.onAppear {
                     withAnimation {
-                        animatedValue = progress
+                        animatedValue = CGFloat(progress)
                     }
                 }
                 
                 HStack {
                     Text("1주차").font(.system(size: 10))
                     Spacer()
-                    Text("\(total)주차").font(.system(size: 10))
+                    Text("\(weekValue.total)주차").font(.system(size: 10))
                 }
             }
         }
@@ -83,16 +89,5 @@ struct WindmillProgressView: View {
 }
 
 #Preview {
-    WindmillProgressView(value: 44, total: 26, height: 10)
-}
-
-
-extension Int {
-    func coerceAtMost(max: Int) -> Int {
-        if self > max {
-            return max
-        } else {
-            return self
-        }
-    }
+    WindmillProgressView(weekValue: WeekValue(total: 26, _week: 5), height: 10)
 }
