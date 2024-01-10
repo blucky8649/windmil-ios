@@ -9,6 +9,20 @@ import SwiftUI
 
 struct WindmillProgressView: View {
     
+    init(value: Int, total: Int, height: Double) {
+        self._value = value
+        self.total = total
+        self.height = height
+    }
+    
+    @State private var animatedValue: CGFloat = 0.0
+    
+    private var progress: CGFloat {
+        get {
+            return CGFloat(value) / CGFloat(total)
+        }
+    }
+    
     var _value: Int
     var value: Int {
         return _value.coerceAtMost(max: total)
@@ -17,19 +31,6 @@ struct WindmillProgressView: View {
     
     var total: Int = 26
     var height: Double = 10.0
-    
-    init(value: Int, total: Int, height: Double) {
-        self._value = value
-        self.total = total
-        self.height = height
-    }
-    
-    
-    private var progress: CGFloat {
-        get {
-            return CGFloat(value) / CGFloat(total)
-        }
-    }
     
     var body: some View {
         GeometryReader { geo in
@@ -41,7 +42,8 @@ struct WindmillProgressView: View {
                         
                         .foregroundColor(.red)
                 }.frame(maxWidth :geo.size.width, alignment: .leading)
-                    .offset(x: (geo.size.width * progress) - 25)
+                    .offset(x: (geo.size.width * animatedValue) - 25)
+                    .animation(.easeInOut(duration: 2.5))
                 
                 
                 ZStack {
@@ -56,13 +58,17 @@ struct WindmillProgressView: View {
                         RoundedRectangle(cornerRadius: 10.0)
                             .fill(.purpleDefault)
                             .frame(
-                                width: geo.size.width * progress,
+                                width: geo.size.width * animatedValue,
                                 height: height,
                                 alignment: .leading
                             )
-                            .transition(.slide)
+                            .animation(.easeInOut(duration: 2.5))
                     }.frame(maxWidth: .infinity, alignment: .leading)
                     
+                }.onAppear {
+                    withAnimation {
+                        animatedValue = progress
+                    }
                 }
                 
                 HStack {
@@ -77,7 +83,7 @@ struct WindmillProgressView: View {
 }
 
 #Preview {
-    WindmillProgressView(value: 2512, total: 26, height: 10)
+    WindmillProgressView(value: 44, total: 26, height: 10)
 }
 
 
