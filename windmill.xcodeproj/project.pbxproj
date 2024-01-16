@@ -20,7 +20,6 @@
 		01A63E6D2B18DECA0028FEDD /* windmillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E6C2B18DECA0028FEDD /* windmillTests.swift */; };
 		01A63E772B18DECA0028FEDD /* windmillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E762B18DECA0028FEDD /* windmillUITests.swift */; };
 		01A63E792B18DECA0028FEDD /* windmillUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */; };
-		01A63E862B18DEE60028FEDD /* EditPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E852B18DEE60028FEDD /* EditPresetView.swift */; };
 		01A63E8A2B18E5F70028FEDD /* AddPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E892B18E5F70028FEDD /* AddPresetView.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +57,6 @@
 		01A63E722B18DECA0028FEDD /* windmillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = windmillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A63E762B18DECA0028FEDD /* windmillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillUITests.swift; sourceTree = "<group>"; };
 		01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		01A63E852B18DEE60028FEDD /* EditPresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPresetView.swift; sourceTree = "<group>"; };
 		01A63E892B18E5F70028FEDD /* AddPresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +112,6 @@
 				01A63E5D2B18DEC80028FEDD /* ContentView.swift */,
 				01A63E5F2B18DECA0028FEDD /* Assets.xcassets */,
 				01A63E612B18DECA0028FEDD /* Preview Content */,
-				01A63E852B18DEE60028FEDD /* EditPresetView.swift */,
 				01A63E892B18E5F70028FEDD /* AddPresetView.swift */,
 				01572D1D2B308645001F964A /* AccountCell.swift */,
 				01572D1F2B3094CB001F964A /* Color.swift */,
@@ -287,7 +284,6 @@
 				01572D222B3C5264001F964A /* WeeksSelectorView.swift in Sources */,
 				01A63E8A2B18E5F70028FEDD /* AddPresetView.swift in Sources */,
 				01572D282B442FBF001F964A /* WindmillProgressView.swift in Sources */,
-				01A63E862B18DEE60028FEDD /* EditPresetView.swift in Sources */,
 				01A63E5C2B18DEC80028FEDD /* windmillApp.swift in Sources */,
 				01572D202B3094CB001F964A /* Color.swift in Sources */,
 				01572D262B4301BF001F964A /* DashboardProgressBarStyle.swift in Sources */,

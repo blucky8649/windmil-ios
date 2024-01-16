@@ -18,7 +18,8 @@ struct DashboardView: View {
                 .font(.system(size: 20, weight: .bold))
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                 .foregroundColor(.black)
-            WindmillProgressView(value: 26, total: 26)
+          
+            WindmillProgressView(weekValue: WeekValue(total: 26, week: 32), height: 10)
             
         }
         .frame(alignment: .leading)
