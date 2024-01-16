@@ -8,7 +8,7 @@
 import Foundation
 
 extension Double {
-    func coereceAtLeast(min: Double) -> Double {
+    func coerceAtLeast(min: Double) -> Double {
         if (self < min) {
             return min
         } else {
