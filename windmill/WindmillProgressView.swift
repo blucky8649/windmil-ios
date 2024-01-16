@@ -12,7 +12,7 @@ struct WeekValue {
     // FIXME: 적당한 네이밍으로 수정해주셔도 좋을것같아요!
     var total: Int = 26
     
-    var _week: Int
+    private var _week: Int = 0
     var week: Int {
         get {
             return _week
@@ -25,11 +25,16 @@ struct WeekValue {
             }
         }
     }
+    
+    init(total: Int, week: Int) {
+        self.total = total
+        self.week = week
+    }
 }
 
 
 struct WindmillProgressView: View {
-    var weekValue: WeekValue = WeekValue(total: 0, _week: 0)
+    var weekValue: WeekValue = WeekValue(total: 0, week: 0)
     var height: Double = 10.0
     
     @State private var animatedValue: CGFloat = 0.0
@@ -89,5 +94,5 @@ struct WindmillProgressView: View {
 }
 
 #Preview {
-    WindmillProgressView(weekValue: WeekValue(total: 26, _week: 5), height: 10)
+    WindmillProgressView(weekValue: WeekValue(total: 26, week: 5), height: 10)
 }
