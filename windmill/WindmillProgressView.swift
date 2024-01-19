@@ -56,7 +56,7 @@ struct WindmillProgressView: View {
                         .foregroundColor(.red)
                 }.frame(maxWidth :geo.size.width, alignment: .leading)
                     .offset(x: (geo.size.width * animatedValue) - 25)
-                    .animation(.easeInOut(duration: 2.5))
+                    .animation(.easeIn(duration: 2.5))
                 
                 ZStack {
                     VStack {
@@ -73,7 +73,7 @@ struct WindmillProgressView: View {
                                 height: height,
                                 alignment: .leading
                             )
-                            .animation(.easeInOut(duration: 2.5))
+                            .animation(.easeIn(duration: 2.5))
                     }.frame(maxWidth: .infinity, alignment: .leading)
                     
                 }.onAppear {
