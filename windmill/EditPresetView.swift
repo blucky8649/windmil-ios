@@ -68,17 +68,19 @@ struct EditPresetView: View {
 
 #Preview {
     VStack {
-        @State var aa = "과쟝님 쨩www"
+        @State var aa = "텍스트 입력"
+        @State var empty = ""
+        var placeHolder = "text text text"
         Text("---Size Test---")
-        EditPresetView(contents: $aa, placeHolder: "과쟝님 쨩")
+        EditPresetView(contents: $aa, placeHolder: "First Name")
         
         EditPresetView(contents: $aa, placeHolder: "First Name", fontSize: 12.0)
         
         EditPresetView(contents: $aa, placeHolder: "First Name", fontSize: 10.0)
         Text("---PlaceHolder Test---")
-        EditPresetView(contents: $aa, placeHolder: "과쟝님 쨩 ✨✨✨", fontSize: 15.0)
+        EditPresetView(contents: $empty, placeHolder: placeHolder, fontSize: 15.0)
         
-        EditPresetView(contents: $aa, placeHolder: "과쟝님 쨩 ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨", fontSize: 15.0)
+        EditPresetView(contents: $empty, placeHolder: placeHolder, fontSize: 15.0)
         
     }
     
