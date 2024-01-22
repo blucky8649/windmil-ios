@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DashboardProgressBarStyle: ProgressViewStyle {
     
-    var color: Color = .PurpleDefault
+    var color: Color = .main
     var height: Double = 10.0
     var labelFontStyle: Font = .body
     
@@ -41,7 +41,7 @@ struct DashboardProgressBarStyle: ProgressViewStyle {
                     
                     VStack {
                         RoundedRectangle(cornerRadius: 10.0)
-                            .fill(.purpleDefault)
+                            .fill(.main)
                             .frame(
                                 width: geo.size.width * progress,
                                 height: height,
@@ -59,7 +59,7 @@ struct DashboardProgressBarStyle: ProgressViewStyle {
 
             }
         }
-        .background(Color.PurpleDefault)
+        .background(Color.main)
         .frame(height: viewHeight.height)
         
     }
