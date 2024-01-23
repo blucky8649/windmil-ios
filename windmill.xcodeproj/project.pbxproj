@@ -25,6 +25,7 @@
 		01A63E792B18DECA0028FEDD /* windmillUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */; };
 		01A63E8A2B18E5F70028FEDD /* AddPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E892B18E5F70028FEDD /* AddPresetView.swift */; };
 		01D3F3422B5D670800D6F6CB /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3412B5D670800D6F6CB /* Shadow.swift */; };
+		744EC6052B6023F600D0BE87 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744EC6042B6023F600D0BE87 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01A63E892B18E5F70028FEDD /* AddPresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresetView.swift; sourceTree = "<group>"; };
 		01D3F3412B5D670800D6F6CB /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		744EC6042B6023F600D0BE87 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				0165ED9B2B56EF5E001D1A96 /* Utils */,
 				01A63E5B2B18DEC80028FEDD /* windmillApp.swift */,
 				01A63E5F2B18DECA0028FEDD /* Assets.xcassets */,
+				744EC6042B6023F600D0BE87 /* Colors.xcassets */,
 				01A63E612B18DECA0028FEDD /* Preview Content */,
 			);
 			path = windmill;
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0165ED9C2B56EF5F001D1A96 /* Utils in Resources */,
+				744EC6052B6023F600D0BE87 /* Colors.xcassets in Resources */,
 				01A63E632B18DECA0028FEDD /* Preview Assets.xcassets in Resources */,
 				01A63E602B18DECA0028FEDD /* Assets.xcassets in Resources */,
 			);
