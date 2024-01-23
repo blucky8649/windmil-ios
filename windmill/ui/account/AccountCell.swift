@@ -22,7 +22,7 @@ struct AccountCell: View {
         HStack(alignment: .center) {
             Text("\(index)")
                 .font(.system(size: 16, weight: .bold))
-                .foregroundColor(.purpleDefault)
+                .foregroundColor(.main)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
             Text("\(amount) 원")
@@ -31,11 +31,10 @@ struct AccountCell: View {
                 .padding(.trailing)
             
         }
-        .frame(maxWidth: .infinity, maxHeight: 64)
-        .background(Color.white)
+        .frame(height: 64)
+        .background(Color.onSecondary)
         .clipShape(RoundedRectangle(cornerRadius: 5))
-        .padding(10)
-        .shadow(radius: 5, x: 3, y: 3) // drop shadow
+        .withShadow(type: .elevation2)
     }
 }
 

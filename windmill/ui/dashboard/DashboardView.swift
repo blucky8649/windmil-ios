@@ -8,28 +8,31 @@
 import SwiftUI
 
 struct DashboardView: View {
+    var currWeek: Int
+    var totalWeeks: Int
+    
     var body: some View {
         VStack {
-            Text("9주차 납부 금액")
+            Text("\(currWeek)주차 납부 금액")
                 .font(.system(size: 10, weight: .regular))
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                .foregroundColor(.RightGray65)
+                .foregroundColor(.secondary)
             Text("16,592,192원")
                 .font(.system(size: 20, weight: .bold))
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                .foregroundColor(.black)
+                .foregroundColor(.onSurface)
           
-            WindmillProgressView(weekValue: WeekValue(total: 26, week: 32), height: 10)
+            WindmillProgressView(weekValue: WeekValue(total: totalWeeks, week: currWeek), height: 10)
             
         }
         .frame(alignment: .leading)
         .padding(20)
-        .background(Color.white)
+        .background(Color.onSecondary)
         .clipShape(RoundedRectangle(cornerRadius: 5))
-        .shadow(radius: 5, x: 3, y: 3) // drop shadow
+        .withShadow(type: .elevation2)
     }
 }
 
 #Preview {
-    DashboardView()
+    DashboardView(currWeek: 5, totalWeeks: 26)
 }
