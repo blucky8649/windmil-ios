@@ -23,6 +23,8 @@
 		01A63E772B18DECA0028FEDD /* windmillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E762B18DECA0028FEDD /* windmillUITests.swift */; };
 		01A63E792B18DECA0028FEDD /* windmillUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */; };
 		01A63E8A2B18E5F70028FEDD /* AddPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E892B18E5F70028FEDD /* AddPresetView.swift */; };
+		01D3F3482B5FF90900D6F6CB /* WindmillAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3472B5FF90900D6F6CB /* WindmillAlgorithm.swift */; };
+		01D3F3492B5FF90900D6F6CB /* WindmillAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3472B5FF90900D6F6CB /* WindmillAlgorithm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 		01A63E762B18DECA0028FEDD /* windmillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillUITests.swift; sourceTree = "<group>"; };
 		01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01A63E892B18E5F70028FEDD /* AddPresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresetView.swift; sourceTree = "<group>"; };
+		01D3F3472B5FF90900D6F6CB /* WindmillAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindmillAlgorithm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 				01572D232B42FD77001F964A /* DashboardView.swift */,
 				01572D252B4301BF001F964A /* DashboardProgressBarStyle.swift */,
 				01572D272B442FBE001F964A /* WindmillProgressView.swift */,
+				01D3F3472B5FF90900D6F6CB /* WindmillAlgorithm.swift */,
 			);
 			path = windmill;
 			sourceTree = "<group>";
@@ -289,6 +293,7 @@
 				01572D242B42FD77001F964A /* DashboardView.swift in Sources */,
 				01572D1E2B308645001F964A /* AccountCell.swift in Sources */,
 				01572D222B3C5264001F964A /* WeeksSelectorView.swift in Sources */,
+				01D3F3482B5FF90900D6F6CB /* WindmillAlgorithm.swift in Sources */,
 				01A63E8A2B18E5F70028FEDD /* AddPresetView.swift in Sources */,
 				0165ED9A2B56EF41001D1A96 /* EditPresetView.swift in Sources */,
 				01572D282B442FBF001F964A /* WindmillProgressView.swift in Sources */,
@@ -303,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01A63E6D2B18DECA0028FEDD /* windmillTests.swift in Sources */,
+				01D3F3492B5FF90900D6F6CB /* WindmillAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
