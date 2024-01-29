@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Preset {
+    let name: String
+    let totalWeeks: Int
+    let weeklyIncrease: Int
+    let weeklyData: [WeeklyData]
+}
