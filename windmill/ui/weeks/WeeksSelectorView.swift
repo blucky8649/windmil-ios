@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WeeksSelectorView: View {
     
-    @State var isSelected = false
+    @Binding var isSelected: Bool
     var index = 1
     
     var body: some View {
@@ -24,27 +24,24 @@ struct WeeksSelectorView: View {
         .frame(width: 64, height: 90)
         .background(getBackGroundColor())
         .clipShape(RoundedRectangle(cornerRadius: 5))
-        .withShadow(isSelected: isSelected)
+        .withShadow(type: .elevation2)
+        .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
     }
     
     func getFontColor() -> Color {
-        return isSelected ? .white : .purpleDefault
+        return isSelected ? .onMain : .main
     }
     
     func getBackGroundColor() -> Color {
-        return isSelected ? .purpleDefault : .white
+        return isSelected ? .main : .onMain
     }
 }
-
-extension View {
-    func withShadow(isSelected: Bool) -> some View {
-        return isSelected ? self.shadow(radius: 0) : self.shadow(radius: 5, x: 3, y: 3)
-    }
-    
-}
-
 
 
 #Preview {
-    WeeksSelectorView(isSelected: true, index: 12)
+    VStack {
+        @State var isSelectecd = false
+        WeeksSelectorView(isSelected: $isSelectecd, index: 12)
+    }
+    
 }

@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		01572D1E2B308645001F964A /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D1D2B308645001F964A /* AccountCell.swift */; };
-		01572D202B3094CB001F964A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D1F2B3094CB001F964A /* Color.swift */; };
 		01572D222B3C5264001F964A /* WeeksSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D212B3C5264001F964A /* WeeksSelectorView.swift */; };
 		01572D242B42FD77001F964A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D232B42FD77001F964A /* DashboardView.swift */; };
-		01572D262B4301BF001F964A /* DashboardProgressBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D252B4301BF001F964A /* DashboardProgressBarStyle.swift */; };
 		01572D282B442FBF001F964A /* WindmillProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01572D272B442FBE001F964A /* WindmillProgressView.swift */; };
 		0165ED9A2B56EF41001D1A96 /* EditPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0165ED992B56EF41001D1A96 /* EditPresetView.swift */; };
-		0165ED9C2B56EF5F001D1A96 /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = 0165ED9B2B56EF5E001D1A96 /* Utils */; };
+		01759A382B5AA82600368409 /* PresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01759A372B5AA82600368409 /* PresetView.swift */; };
+		01759A3C2B5ADB4A00368409 /* WeeksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01759A3B2B5ADB4A00368409 /* WeeksListView.swift */; };
+		01759A3E2B5D4C4E00368409 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01759A3D2B5D4C4E00368409 /* AccountsView.swift */; };
 		01A63E5C2B18DEC80028FEDD /* windmillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E5B2B18DEC80028FEDD /* windmillApp.swift */; };
 		01A63E5E2B18DEC80028FEDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E5D2B18DEC80028FEDD /* ContentView.swift */; };
 		01A63E602B18DECA0028FEDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A63E5F2B18DECA0028FEDD /* Assets.xcassets */; };
@@ -23,8 +23,11 @@
 		01A63E772B18DECA0028FEDD /* windmillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E762B18DECA0028FEDD /* windmillUITests.swift */; };
 		01A63E792B18DECA0028FEDD /* windmillUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */; };
 		01A63E8A2B18E5F70028FEDD /* AddPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A63E892B18E5F70028FEDD /* AddPresetView.swift */; };
-		01D3F3482B5FF90900D6F6CB /* WindmillAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3472B5FF90900D6F6CB /* WindmillAlgorithm.swift */; };
+    01D3F3482B5FF90900D6F6CB /* WindmillAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3472B5FF90900D6F6CB /* WindmillAlgorithm.swift */; };
 		01D3F3492B5FF90900D6F6CB /* WindmillAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3472B5FF90900D6F6CB /* WindmillAlgorithm.swift */; };
+		01D3F3422B5D670800D6F6CB /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3412B5D670800D6F6CB /* Shadow.swift */; };
+		01D3F35C2B602BD100D6F6CB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F35B2B602BD100D6F6CB /* Extensions.swift */; };
+		744EC6052B6023F600D0BE87 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744EC6042B6023F600D0BE87 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +49,13 @@
 
 /* Begin PBXFileReference section */
 		01572D1D2B308645001F964A /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
-		01572D1F2B3094CB001F964A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		01572D212B3C5264001F964A /* WeeksSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksSelectorView.swift; sourceTree = "<group>"; };
 		01572D232B42FD77001F964A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
-		01572D252B4301BF001F964A /* DashboardProgressBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardProgressBarStyle.swift; sourceTree = "<group>"; };
 		01572D272B442FBE001F964A /* WindmillProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindmillProgressView.swift; sourceTree = "<group>"; };
 		0165ED992B56EF41001D1A96 /* EditPresetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPresetView.swift; sourceTree = "<group>"; };
-		0165ED9B2B56EF5E001D1A96 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utils; sourceTree = "<group>"; };
+		01759A372B5AA82600368409 /* PresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetView.swift; sourceTree = "<group>"; };
+		01759A3B2B5ADB4A00368409 /* WeeksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksListView.swift; sourceTree = "<group>"; };
+		01759A3D2B5D4C4E00368409 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
 		01A63E582B18DEC80028FEDD /* windmill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = windmill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A63E5B2B18DEC80028FEDD /* windmillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillApp.swift; sourceTree = "<group>"; };
 		01A63E5D2B18DEC80028FEDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,7 +67,10 @@
 		01A63E762B18DECA0028FEDD /* windmillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillUITests.swift; sourceTree = "<group>"; };
 		01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windmillUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01A63E892B18E5F70028FEDD /* AddPresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresetView.swift; sourceTree = "<group>"; };
-		01D3F3472B5FF90900D6F6CB /* WindmillAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindmillAlgorithm.swift; sourceTree = "<group>"; };
+    01D3F3472B5FF90900D6F6CB /* WindmillAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindmillAlgorithm.swift; sourceTree = "<group>"; };
+		01D3F3412B5D670800D6F6CB /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		01D3F35B2B602BD100D6F6CB /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		744EC6042B6023F600D0BE87 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +121,14 @@
 		01A63E5A2B18DEC80028FEDD /* windmill */ = {
 			isa = PBXGroup;
 			children = (
-				0165ED9B2B56EF5E001D1A96 /* Utils */,
-				0165ED992B56EF41001D1A96 /* EditPresetView.swift */,
+				01D3F3562B602AA400D6F6CB /* utils */,
+				01D3F3402B5D66E400D6F6CB /* ui */,
+				01D3F33F2B5D66D800D6F6CB /* theme */,
 				01A63E5B2B18DEC80028FEDD /* windmillApp.swift */,
-				01A63E5D2B18DEC80028FEDD /* ContentView.swift */,
 				01A63E5F2B18DECA0028FEDD /* Assets.xcassets */,
+				744EC6042B6023F600D0BE87 /* Colors.xcassets */,
 				01A63E612B18DECA0028FEDD /* Preview Content */,
-				01A63E892B18E5F70028FEDD /* AddPresetView.swift */,
+        01A63E892B18E5F70028FEDD /* AddPresetView.swift */,
 				01572D1D2B308645001F964A /* AccountCell.swift */,
 				01572D1F2B3094CB001F964A /* Color.swift */,
 				01572D212B3C5264001F964A /* WeeksSelectorView.swift */,
@@ -156,6 +163,71 @@
 				01A63E782B18DECA0028FEDD /* windmillUITestsLaunchTests.swift */,
 			);
 			path = windmillUITests;
+			sourceTree = "<group>";
+		};
+		01D3F33F2B5D66D800D6F6CB /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				01D3F3412B5D670800D6F6CB /* Shadow.swift */,
+			);
+			path = theme;
+			sourceTree = "<group>";
+		};
+		01D3F3402B5D66E400D6F6CB /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				01759A372B5AA82600368409 /* PresetView.swift */,
+				01D3F3462B5D788E00D6F6CB /* dashboard */,
+				01D3F3452B5D785C00D6F6CB /* weeks */,
+				01D3F3442B5D781B00D6F6CB /* account */,
+				01D3F3432B5D77F300D6F6CB /* add-preset */,
+				01A63E5D2B18DEC80028FEDD /* ContentView.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		01D3F3432B5D77F300D6F6CB /* add-preset */ = {
+			isa = PBXGroup;
+			children = (
+				0165ED992B56EF41001D1A96 /* EditPresetView.swift */,
+				01A63E892B18E5F70028FEDD /* AddPresetView.swift */,
+			);
+			path = "add-preset";
+			sourceTree = "<group>";
+		};
+		01D3F3442B5D781B00D6F6CB /* account */ = {
+			isa = PBXGroup;
+			children = (
+				01759A3D2B5D4C4E00368409 /* AccountsView.swift */,
+				01572D1D2B308645001F964A /* AccountCell.swift */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		01D3F3452B5D785C00D6F6CB /* weeks */ = {
+			isa = PBXGroup;
+			children = (
+				01759A3B2B5ADB4A00368409 /* WeeksListView.swift */,
+				01572D212B3C5264001F964A /* WeeksSelectorView.swift */,
+			);
+			path = weeks;
+			sourceTree = "<group>";
+		};
+		01D3F3462B5D788E00D6F6CB /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				01572D232B42FD77001F964A /* DashboardView.swift */,
+				01572D272B442FBE001F964A /* WindmillProgressView.swift */,
+			);
+			path = dashboard;
+			sourceTree = "<group>";
+		};
+		01D3F3562B602AA400D6F6CB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				01D3F35B2B602BD100D6F6CB /* Extensions.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0165ED9C2B56EF5F001D1A96 /* Utils in Resources */,
+				744EC6052B6023F600D0BE87 /* Colors.xcassets in Resources */,
 				01A63E632B18DECA0028FEDD /* Preview Assets.xcassets in Resources */,
 				01A63E602B18DECA0028FEDD /* Assets.xcassets in Resources */,
 			);
@@ -291,15 +363,18 @@
 			files = (
 				01A63E5E2B18DEC80028FEDD /* ContentView.swift in Sources */,
 				01572D242B42FD77001F964A /* DashboardView.swift in Sources */,
+				01759A3C2B5ADB4A00368409 /* WeeksListView.swift in Sources */,
 				01572D1E2B308645001F964A /* AccountCell.swift in Sources */,
 				01572D222B3C5264001F964A /* WeeksSelectorView.swift in Sources */,
 				01D3F3482B5FF90900D6F6CB /* WindmillAlgorithm.swift in Sources */,
 				01A63E8A2B18E5F70028FEDD /* AddPresetView.swift in Sources */,
 				0165ED9A2B56EF41001D1A96 /* EditPresetView.swift in Sources */,
+				01D3F3422B5D670800D6F6CB /* Shadow.swift in Sources */,
+				01D3F35C2B602BD100D6F6CB /* Extensions.swift in Sources */,
+				01759A3E2B5D4C4E00368409 /* AccountsView.swift in Sources */,
 				01572D282B442FBF001F964A /* WindmillProgressView.swift in Sources */,
 				01A63E5C2B18DEC80028FEDD /* windmillApp.swift in Sources */,
-				01572D202B3094CB001F964A /* Color.swift in Sources */,
-				01572D262B4301BF001F964A /* DashboardProgressBarStyle.swift in Sources */,
+				01759A382B5AA82600368409 /* PresetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

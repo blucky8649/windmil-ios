@@ -61,13 +61,13 @@ struct WindmillProgressView: View {
                 ZStack {
                     VStack {
                         RoundedRectangle(cornerRadius: 10.0)
-                            .fill(.rightGrayD9)
+                            .fill(.surfaceContainerHighest)
                             .frame(maxWidth: geo.size.width, maxHeight: height)
                     }.frame(maxWidth: .infinity, alignment: .leading)
                     
                     VStack {
                         RoundedRectangle(cornerRadius: 10.0)
-                            .fill(.purpleDefault)
+                            .fill(.main)
                             .frame(
                                 width: geo.size.width * animatedValue,
                                 height: height,
@@ -94,5 +94,5 @@ struct WindmillProgressView: View {
 }
 
 #Preview {
-    WindmillProgressView(weekValue: WeekValue(total: 26, week: 5), height: 10)
+    WindmillProgressView(weekValue: WeekValue(total: 26, week: 2), height: 10)
 }
