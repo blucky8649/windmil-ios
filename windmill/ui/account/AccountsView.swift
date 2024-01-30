@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct AccountsView: View {
+    var accounts: [Int]
+    
     var body: some View {
         VStack {
             Text("Bank Accounts")
                 .font(.system(size: 16, weight: Font.Weight.bold))
                 .frame(maxWidth: .infinity, alignment: .leading)
             LazyVStack {
-                ForEach(1...15, id: \.self) {index in
-                    AccountCell(index: index, amount: index * 10000)
+                ForEach(0 ..< accounts.count, id: \.self) {index in
+                    AccountCell(index: index + 1, amount: accounts.reversed()[index])
                 }
                 
             }
@@ -25,6 +27,7 @@ struct AccountsView: View {
 
 #Preview {
     ScrollView(.vertical) {
-        AccountsView()
+        @State var accounts = [1, 2, 3, 4, 5, 6]
+        AccountsView(accounts: accounts)
     }
 }

@@ -29,6 +29,8 @@
 		01D3F36D2B680B5800D6F6CB /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F36C2B680B5800D6F6CB /* AccountCell.swift */; };
 		01D3F36F2B680B5E00D6F6CB /* WeeksSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F36E2B680B5E00D6F6CB /* WeeksSelectorView.swift */; };
 		01D3F3732B680B8800D6F6CB /* AddPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3722B680B8800D6F6CB /* AddPresetView.swift */; };
+		01D3F37E2B6960C200D6F6CB /* WeeklyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3642B6808EE00D6F6CB /* WeeklyData.swift */; };
+		01D3F37F2B6960C200D6F6CB /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3662B68090A00D6F6CB /* Preset.swift */; };
 		744EC6052B6023F600D0BE87 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744EC6042B6023F600D0BE87 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -391,6 +393,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D3F37E2B6960C200D6F6CB /* WeeklyData.swift in Sources */,
+				01D3F37F2B6960C200D6F6CB /* Preset.swift in Sources */,
 				01A63E6D2B18DECA0028FEDD /* windmillTests.swift in Sources */,
 				01D3F3492B5FF90900D6F6CB /* WindmillAlgorithm.swift in Sources */,
 			);

@@ -37,8 +37,6 @@ struct WindmillProgressView: View {
     var weekValue: WeekValue = WeekValue(total: 0, week: 0)
     var height: Double = 10.0
     
-    @State private var animatedValue: CGFloat = 0.0
-    
     private var progress: CGFloat {
         get {
             return CGFloat(weekValue.week) / CGFloat(weekValue.total)
@@ -55,8 +53,8 @@ struct WindmillProgressView: View {
                     
                         .foregroundColor(.red)
                 }.frame(maxWidth :geo.size.width, alignment: .leading)
-                    .offset(x: (geo.size.width * animatedValue) - 25)
-                    .animation(.easeIn(duration: 2.5))
+                    .offset(x: (geo.size.width * progress) - 25)
+//                    .animation(.easeIn(duration: 2.5))
                 
                 ZStack {
                     VStack {
@@ -69,17 +67,13 @@ struct WindmillProgressView: View {
                         RoundedRectangle(cornerRadius: 10.0)
                             .fill(.main)
                             .frame(
-                                width: geo.size.width * animatedValue,
+                                width: geo.size.width * progress,
                                 height: height,
                                 alignment: .leading
                             )
-                            .animation(.easeIn(duration: 2.5))
+//                            .animation(.easeIn(duration: 2.5))
                     }.frame(maxWidth: .infinity, alignment: .leading)
                     
-                }.onAppear {
-                    withAnimation {
-                        animatedValue = CGFloat(progress)
-                    }
                 }
                 
                 HStack {

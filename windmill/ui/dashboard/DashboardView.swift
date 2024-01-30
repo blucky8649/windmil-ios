@@ -10,6 +10,7 @@ import SwiftUI
 struct DashboardView: View {
     var currWeek: Int
     var totalWeeks: Int
+    var totalAmount: Int
     
     var body: some View {
         VStack {
@@ -17,7 +18,7 @@ struct DashboardView: View {
                 .font(.system(size: 10, weight: .regular))
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                 .foregroundColor(.secondary)
-            Text("16,592,192원")
+            Text("\(totalAmount)원")
                 .font(.system(size: 20, weight: .bold))
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                 .foregroundColor(.onSurface)
@@ -34,5 +35,5 @@ struct DashboardView: View {
 }
 
 #Preview {
-    DashboardView(currWeek: 5, totalWeeks: 26)
+    DashboardView(currWeek: 5, totalWeeks: 26, totalAmount: 10404040)
 }
