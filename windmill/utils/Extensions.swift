@@ -16,3 +16,11 @@ extension Double {
         }
     }
 }
+
+extension Int {
+    func toDecimal() -> String {
+        let nf = NumberFormatter()
+        nf.numberStyle = .decimal
+        return nf.string(for: self) ?? "0"
+    }
+}

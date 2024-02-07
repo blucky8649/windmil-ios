@@ -31,6 +31,11 @@
 		01D3F3732B680B8800D6F6CB /* AddPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3722B680B8800D6F6CB /* AddPresetView.swift */; };
 		01D3F37E2B6960C200D6F6CB /* WeeklyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3642B6808EE00D6F6CB /* WeeklyData.swift */; };
 		01D3F37F2B6960C200D6F6CB /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3662B68090A00D6F6CB /* Preset.swift */; };
+		01D3F3882B7256D100D6F6CB /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3872B7256D100D6F6CB /* Badge.swift */; };
+		01D3F38B2B725F1900D6F6CB /* PresetListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F38A2B725F1900D6F6CB /* PresetListCell.swift */; };
+		01D3F38D2B726A2A00D6F6CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F38C2B726A2A00D6F6CB /* Constants.swift */; };
+		01D3F38F2B727F4800D6F6CB /* PresetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F38E2B727F4800D6F6CB /* PresetListView.swift */; };
+		01D3F3922B7289C900D6F6CB /* CornerRadiusStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3912B7289C900D6F6CB /* CornerRadiusStyle.swift */; };
 		744EC6052B6023F600D0BE87 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744EC6042B6023F600D0BE87 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +81,11 @@
 		01D3F36C2B680B5800D6F6CB /* AccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		01D3F36E2B680B5E00D6F6CB /* WeeksSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeksSelectorView.swift; sourceTree = "<group>"; };
 		01D3F3722B680B8800D6F6CB /* AddPresetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPresetView.swift; sourceTree = "<group>"; };
+		01D3F3872B7256D100D6F6CB /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		01D3F38A2B725F1900D6F6CB /* PresetListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetListCell.swift; sourceTree = "<group>"; };
+		01D3F38C2B726A2A00D6F6CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		01D3F38E2B727F4800D6F6CB /* PresetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetListView.swift; sourceTree = "<group>"; };
+		01D3F3912B7289C900D6F6CB /* CornerRadiusStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusStyle.swift; sourceTree = "<group>"; };
 		744EC6042B6023F600D0BE87 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +186,9 @@
 		01D3F3402B5D66E400D6F6CB /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				01D3F3902B72897F00D6F6CB /* common */,
+				01D3F3892B725F0400D6F6CB /* preset-list */,
+				01D3F3862B7256C400D6F6CB /* badge */,
 				01759A372B5AA82600368409 /* PresetView.swift */,
 				01D3F3462B5D788E00D6F6CB /* dashboard */,
 				01D3F3452B5D785C00D6F6CB /* weeks */,
@@ -226,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				01D3F35B2B602BD100D6F6CB /* Extensions.swift */,
+				01D3F38C2B726A2A00D6F6CB /* Constants.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -237,6 +251,31 @@
 				01D3F3662B68090A00D6F6CB /* Preset.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		01D3F3862B7256C400D6F6CB /* badge */ = {
+			isa = PBXGroup;
+			children = (
+				01D3F3872B7256D100D6F6CB /* Badge.swift */,
+			);
+			path = badge;
+			sourceTree = "<group>";
+		};
+		01D3F3892B725F0400D6F6CB /* preset-list */ = {
+			isa = PBXGroup;
+			children = (
+				01D3F38A2B725F1900D6F6CB /* PresetListCell.swift */,
+				01D3F38E2B727F4800D6F6CB /* PresetListView.swift */,
+			);
+			path = "preset-list";
+			sourceTree = "<group>";
+		};
+		01D3F3902B72897F00D6F6CB /* common */ = {
+			isa = PBXGroup;
+			children = (
+				01D3F3912B7289C900D6F6CB /* CornerRadiusStyle.swift */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +409,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D3F38B2B725F1900D6F6CB /* PresetListCell.swift in Sources */,
+				01D3F38D2B726A2A00D6F6CB /* Constants.swift in Sources */,
 				01A63E5E2B18DEC80028FEDD /* ContentView.swift in Sources */,
+				01D3F3882B7256D100D6F6CB /* Badge.swift in Sources */,
 				01759A3C2B5ADB4A00368409 /* WeeksListView.swift in Sources */,
 				01D3F3652B6808EE00D6F6CB /* WeeklyData.swift in Sources */,
 				01D3F36A2B680B4800D6F6CB /* WindmillProgressView.swift in Sources */,
@@ -378,12 +420,14 @@
 				01D3F3482B5FF90900D6F6CB /* WindmillAlgorithm.swift in Sources */,
 				0165ED9A2B56EF41001D1A96 /* EditPresetView.swift in Sources */,
 				01D3F3422B5D670800D6F6CB /* Shadow.swift in Sources */,
+				01D3F3922B7289C900D6F6CB /* CornerRadiusStyle.swift in Sources */,
 				01D3F3672B68090A00D6F6CB /* Preset.swift in Sources */,
 				01D3F36D2B680B5800D6F6CB /* AccountCell.swift in Sources */,
 				01D3F35C2B602BD100D6F6CB /* Extensions.swift in Sources */,
 				01D3F36B2B680B4800D6F6CB /* DashboardView.swift in Sources */,
 				01759A3E2B5D4C4E00368409 /* AccountsView.swift in Sources */,
 				01D3F36F2B680B5E00D6F6CB /* WeeksSelectorView.swift in Sources */,
+				01D3F38F2B727F4800D6F6CB /* PresetListView.swift in Sources */,
 				01A63E5C2B18DEC80028FEDD /* windmillApp.swift in Sources */,
 				01759A382B5AA82600368409 /* PresetView.swift in Sources */,
 			);
@@ -560,7 +604,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,7 +634,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
