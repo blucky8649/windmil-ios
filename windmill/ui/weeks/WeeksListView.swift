@@ -26,7 +26,7 @@ struct WeeksListView: View {
                         @State var isSelected = true
                         WeeksSelectorView(isSelected: Binding<Bool>(get: {index == selectedWeek}, set: {_ in selectedWeek = index}), index: index)
                             .onTapGesture {
-                                print("selected Week \(selectedWeek)")
+                                NSLog("selected Week \(selectedWeek)")
                                 isSelected = !isSelected
                                 onClick(index)
                             }
@@ -48,6 +48,7 @@ struct WeeksListView: View {
 #Preview {
     VStack {
         @State var isSelected = 12
+        @State var isShowSheet = true
         WeeksListView(totalWeeks: 26, selectedWeek: $isSelected, onClick: {index in print(index)})
     }
     

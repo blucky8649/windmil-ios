@@ -11,6 +11,7 @@ struct ContentView: View {
     static let coloredAppearance = UINavigationBarAppearance()
     @State var selectedWeek = 12
     @State var preset: Preset = createPreset(presetName: "Windmil", totalWeeks: 26, weeklyIncrease: 5000, targetWeek: 26)
+    @State var isPresetTitleClicked = false
     
     init() {
         ContentView.coloredAppearance.backgroundColor = UIColor(Color.mainContainer)
@@ -38,6 +39,18 @@ struct ContentView: View {
                 }.toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         PresetView(presetName: preset.name).padding(EdgeInsets(top: 0, leading: 18, bottom: 0, trailing: 0))
+                            .onTapGesture {
+                                isPresetTitleClicked.toggle()
+                            }
+                            .sheet(isPresented: $isPresetTitleClicked) {
+                                let data:[PresetListCell.Data] = [
+                                    PresetListCell.Data(presetName: "내맘대로 프리셋 1", totalWeeks: 26, currentWeek: 12, weeklyIncrease: 10000, paymentDay: .Friday, isActive: true),
+                                    PresetListCell.Data(isActive: false),
+                                    PresetListCell.Data(isActive: false)
+                                ]
+                                PresetListView(cellDataList: data)
+                                    .presentationCornerRadius(28) // TODO: IOS 16.4
+                            }
                     }
                 }.background(Color.onMain)
             }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
