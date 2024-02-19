@@ -50,6 +50,7 @@ struct ContentView: View {
                                 ]
                                 PresetListView(cellDataList: data)
                                     .presentationCornerRadius(28) // TODO: IOS 16.4
+                                    .presentationDragIndicator(Visibility.visible)
                             }
                     }
                 }.background(Color.onMain)

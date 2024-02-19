@@ -31,10 +31,11 @@ struct PresetListView: View {
                             isNavigationActive = true
                         } label: {
                             Text("추가")
-                                .foregroundStyle(Color.onSurface)
+                                .foregroundStyle(Color.main)
+                                .font(.system(size: 14))
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
                         }
-                    }
+                    }.padding(EdgeInsets(top: 40, leading: 0, bottom: 0, trailing: 0))
                     
                     
                     LazyVStack {
@@ -62,8 +63,10 @@ struct PresetListView: View {
                         
                 }
                 .frame(maxHeight: .infinity, alignment: .top)
-                .background(Color.mainContainer)
+                .background(Color.surface)
                 
+            }.onAppear {
+                ContentView.coloredAppearance.backgroundColor = UIColor(Color.surface)
             }
             
             
