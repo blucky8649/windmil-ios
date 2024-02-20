@@ -36,6 +36,7 @@
 		01D3F38D2B726A2A00D6F6CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F38C2B726A2A00D6F6CB /* Constants.swift */; };
 		01D3F38F2B727F4800D6F6CB /* PresetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F38E2B727F4800D6F6CB /* PresetListView.swift */; };
 		01D3F3922B7289C900D6F6CB /* CornerRadiusStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3912B7289C900D6F6CB /* CornerRadiusStyle.swift */; };
+		01D3F3942B83A42F00D6F6CB /* CustomNavBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3F3932B83A42E00D6F6CB /* CustomNavBackButton.swift */; };
 		744EC6052B6023F600D0BE87 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744EC6042B6023F600D0BE87 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		01D3F38C2B726A2A00D6F6CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		01D3F38E2B727F4800D6F6CB /* PresetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetListView.swift; sourceTree = "<group>"; };
 		01D3F3912B7289C900D6F6CB /* CornerRadiusStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusStyle.swift; sourceTree = "<group>"; };
+		01D3F3932B83A42E00D6F6CB /* CustomNavBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBackButton.swift; sourceTree = "<group>"; };
 		744EC6042B6023F600D0BE87 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				01D3F3912B7289C900D6F6CB /* CornerRadiusStyle.swift */,
+				01D3F3932B83A42E00D6F6CB /* CustomNavBackButton.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				01759A3E2B5D4C4E00368409 /* AccountsView.swift in Sources */,
 				01D3F36F2B680B5E00D6F6CB /* WeeksSelectorView.swift in Sources */,
 				01D3F38F2B727F4800D6F6CB /* PresetListView.swift in Sources */,
+				01D3F3942B83A42F00D6F6CB /* CustomNavBackButton.swift in Sources */,
 				01A63E5C2B18DEC80028FEDD /* windmillApp.swift in Sources */,
 				01759A382B5AA82600368409 /* PresetView.swift in Sources */,
 			);

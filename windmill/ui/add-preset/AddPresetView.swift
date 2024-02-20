@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct AddPresetView: View {
-    @State private var presetName: String = ""
-    @State private var interestRate: String = ""
-    @State private var paymentWeekPeriod: String = ""
-    @State private var weeklyIncrease: String = ""
+    @Environment(\.dismiss) private var dismiss
+    
+    @State var presetName: String = ""
+    @State var interestRate: String = ""
+    @State var paymentWeekPeriod: String = ""
+    @State var weeklyIncrease: String = ""
+    @State var selectedDay: Day = .Monday
     
     var body: some View {
         VStack() {
@@ -35,9 +38,12 @@ struct AddPresetView: View {
                 placeHolder: "매주 증액량(원)",
                 fontSize: 12.0
             )
-        }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        
-        
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .padding()
+        .background(Color.surface)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: CustomNavBackButton(dismiss: self.dismiss))
     }
 }
 

@@ -39,7 +39,7 @@ struct PresetListCell: View {
                    
                 VStack {
                     HStack {
-                        Text(data.presetName)
+                        Text(data.presetName).foregroundStyle(Color.onSurface)
                         Badge(backgroundColor: .mainFixed, fontColor: .white, fontSize: 8, text: "\(data.currentWeek) 주차")
                     }.frame(maxWidth: .infinity, alignment: .leading)
                         
@@ -52,7 +52,7 @@ struct PresetListCell: View {
             }
         }
         .frame(height: viewHeight)
-        .background(Color.onMain)
+        .background(Color.onSecondary)
     }
 }
 
@@ -66,6 +66,6 @@ struct PresetListCell: View {
         
     }
     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
-    .background(Color.mainContainer)
+    .background(Color.surface)
     
 }
